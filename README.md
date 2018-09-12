@@ -25,7 +25,7 @@
 - ダウンロードした quote.csv を ~/program/data/rate_exchange に配置する。  
 - ※上書き保存OK
 
-### １－２．プログラム実行
+### １－２．プログラム実行（学習モデル作成・保存）
 
 - Anaconda Navigator, jupyter notebook を起動する
 - jupyter notebook 上から ~/program/create_forcast-model.ipynb を実行する。
@@ -49,8 +49,8 @@
 
 - 以下URL先より、2018年株価データ(1321_2018.csv)をダウンロードする。
 - [個別株価データ](https://kabuoji3.com/stock/1321/2018/)
-- excel で、ダウンロードした 1321_2018.csv を 起動する。
-- excel で、~/program/target/1321_target.csv を起動する。
+- excel で、ダウンロードした 1321_2018.csv を 開く。
+- excel で、~/program/target/1321_target.csv を開く。。
 - 1321_2018.csv から、予測したい日の前営業日データ(行)を、行コピーする。
 - 1321_target.csv の２行目に、先ほど行コピーしたデータを貼り付け、保存する。
 - excel を終了する。
@@ -59,8 +59,15 @@
 
 - 以下URLより、為替データをダウンロードする。
 - [外国為替公示相場ヒストリカルデータ(日次)](https://www.mizuhobank.co.jp/market/csv/quote.csv)
-- excel で、ダウンロードした quote.csv を 起動する。
-- excel で、~/program/target/quote_target.csv を起動する。
+- excel で、ダウンロードした quote.csv を 開く。
+- excel で、~/program/target/quote_target.csv を開く。
 - quote.csv から、予測したい日の前営業日データ(行)を、行コピーする。
 - quote_target.csv の２行目に、先ほど行コピーしたデータを貼り付け、保存する。
 - excel を終了する。
+
+### ２－３．プログラム実行・結果確認（株価予測）
+
+- Anaconda Navigator, jupyter notebook を起動する
+- jupyter notebook 上から ~/program/forecast_start.ipynb を実行する。
+- メニュー「kernel」より「restart & Run ALL」を実行する。
+- 予測結果について確認する。（UP or DOWN）
